@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Sofia+Sans+Extra+Condensed&family=Source+Sans+Pro:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    }
+ 
+    header{
+width: 100%;
+top: 0;
+left: 0;
+background: #fff;
+ }
+
+ .menu{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+ }
+
+ .logo img{
+width: 200px;
+margin-left: -90px;
+ }
+
+ .buscador input{
+width: 100%;
+padding: 8px;
+background: #C40E0E;
+color: #fff;
+border-radius: 20px;
+margin-top: 30px;
+margin-left: 80px;
+ }
+
+ .buscador input{
+   width: 340px;
+   padding: 8px;
+   background: #C40E0E;
+   color: #fff;
+   border-radius: 20px;
+   margin-top: 30px;
+   margin-left: 100px;
+    }
+    
+   
+    .boton{
+      border: 3px solid #1bd640;
+      margin-left: 1060px;
+      margin-top: -100px;
+      position: absolute;
+      padding: 10px 30px;
+      z-index: 1;
+      overflow: hidden;
+      color: #000;
+    }
+   
+    .boton::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #1bd640;
+      left: 0;
+      top: -100%;
+      border-radius: 100%;
+      z-index: -1;
+      transition: all 0.6s ease;
+    }
+   
+    .boton:hover::before{
+      top:0;
+      border-radius: 0%;
+    }
+   
+    .cotiza{
+      border: 3px solid #000;
+      margin-left: 900px;
+      margin-top: -100px;
+      position: absolute;
+      padding: 10px 30px;
+      z-index: 1;
+      overflow: hidden;
+      color: #c4b9b9;
+    }
+   
+    .cotiza::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      left: 0;
+      top: -100%;
+      border-radius: 100%;
+      z-index: -1;
+      transition: all 0.6s ease;
+    }
+   
+    .cotiza:hover::before{
+      top:0;
+      border-radius: 0%;
+    }
+    .Nosotros{
+      border: 3px solid #C40E0E;
+      margin-left: 740px;
+      margin-top: -100px;
+      position: absolute;
+      padding: 10px 30px;
+      z-index: 1;
+      overflow: hidden;
+      color: #000;
+    }
+   
+    .Nosotros::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #C40E0E;
+      left: 0;
+      top: -100%;
+      border-radius: 100%;
+      z-index: -1;
+      transition: all 0.6s ease;
+    }
+   
+    .Nosotros:hover::before{
+      top:0;
+      border-radius: 0%;
+    }
+   
+    .usuario{
+      width: 65px;
+   margin-left: 1250px;
+   position: absolute;
+   margin-top: -110px;
+    }
+ .contenedor{
+   
+    width: 100%;
+    height: 50px;
+    background: #C40E0E;
+    padding: 0px 20px;
+    justify-content: center;
+ }
+  
+  
+  
+ .menu1{
+max-width: 1200px;
+    margin: auto;
+    height: 100%;
+   
+ }
+
+ nav{
+    height: 100%;
+ }
+
+ nav > ul{
+    height: 100%;
+    display: flex;
+ }
+
+ nav  ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+ }
+
+ 
+ nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color:#fff;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all 300ms ease;
+    margin-top: -45px;
+    padding-left: 80px;
+    text-align: left;
+
+}
+
+ nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #c4b9b9;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+ }
+
+ nav ul li ul{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background: #968a8a;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    position: absolute;
+    left: -3px;
+    top:20px;
+    box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
+    padding: 10px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+transition: all 300ms ease;
+ }
+
+ nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top:20px;
+ }
+
+ nav ul li ul:before{
+    content:'' ;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid black;
+    position: absolute;
+    top: -12px;
+    left: 2px;
+ }
+
+ nav ul li ul li a{
+display: block;
+color: #fff;
+padding: 6px;
+padding-left: 12px;
+margin-top: 10px;
+font-size: 14px;
+text-transform: uppercase;
+transition: all 300ms ease;
+ }
+
+ nav ul li ul li a:hover{
+background: #C40E0E;
+color: black;
+transform: scale(1.1);
+box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.5);
+ }
+
+
+section .fondo{
+width: 600px;
+height: 300px;
+border-radius: 10px;
+position: absolute;
+margin-left: 20px;
+margin-top: 50px;
+}
+
+section h1{
+  position: absolute;
+  color: #C40E0E;
+  margin-top: 60px;
+  margin-left: 50px;
+  font-size: 35px;
+}
+
+section p{
+  position: absolute;
+  margin-left:50px;
+  margin-top: 110px;
+}
+
+.imgmision .carro{
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 50px;
+}
+
+.imgmision .carro2{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 1060px;
+}
+
+.imgmision .linea4{
+  position: absolute;
+  width: 500px;
+  height: 180px;
+  margin-left: 750px;
+  margin-top: 120px;
+}
+
+.imgmision .carro3{
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 720px;
+}
+
+.imgmision .carro4{
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 1080px;
+}
+
+.vision .fondo2{
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 700px;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.vision h1{
+  color: #C40E0E;
+  position: absolute;
+  margin-top: 520px;
+  margin-left: 730px;
+}
+
+.vision h2{
+  color: #C40E0E;
+  position: absolute;
+  margin-top: 560px;
+  margin-left: 850px;
+}
+
+.vision p{
+  position: absolute;
+  margin-top: 600px;
+  margin-left: 710px;
+  font-size: 18px;
+}
+
+.imgvision{
+  position: absolute;
+  margin-top: 420px;
+}
+
+
+ footer{
+    width: 100%;
+    height: 255px;
+    padding: 40px 0px;
+    background: #000;
+    margin-top: 40px;
+    position: absolute;
+    margin-top: 1000px;
+ }
+ 
+ .pagina h1{
+   color: #fff;
+   font-size: 20px;
+   margin-left: 30px;
+ }
+ 
+ .pagina h2{
+   color: #fff;
+   font-size: 20px;
+   margin-left: 10px;
+   padding: 15px;
+ }
+ 
+ .redes h1{
+   text-align: center;
+   margin-top: -100px;
+ }
+ 
+ .redes .face{
+   width: 80px;
+   position: absolute;
+   margin-left: 490px;
+   padding: 10px;
+ }
+ 
+ .redes .insta{
+   position: absolute;
+   width: 80px;
+   margin-left: 590px;
+   padding: 10px;
+ }
+ 
+ .redes .tiktok{
+   width: 80px;
+   position: absolute;
+   margin-left: 690px;
+   padding: 10px;
+ }
+ 
+ .redes .youtube{
+   width: 80px;
+   position: absolute;
+   margin-left: 800px;
+   padding: 10px;
+ }
+ 
+ .visitarnos1 h2{
+   color: #fff;
+   text-align: right;
+   margin-top: -40px;
+   font-size: 24px;
+   margin-left: -30px;
+ 
+ }
+ 
+ .visitarnos1 .mapa{
+   position: absolute;
+   width: 50px;
+   margin-top: -10px;
+   margin-left: 1200px;
+ }
+ 
+ .terminos {
+   color: #fff;
+   margin-top: 90px;
+   text-align: center;
+   padding-top: 25px;
+ }
+ 
+ 
+ 
+ 
+

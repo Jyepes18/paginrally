@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Producto.css">
+    <title>Registro de Producto</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <img src="img/logo/marca.jpg" alt="Ralli Car Audio">
+
+            <div class="dropdown">
+                <img class=" foto1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/admi/administrador.png" >
+                <ul class="dropdown-menu">
+                <a href="das.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
+                </ul>
+              </div>
+        </header>
+
+        <article>
+            <br><br>
+            <h2 class="h2">Registrar Producto</h2>
+
+                <form class="formulario1" method="post"  onsubmit=" return validar();">
+                    <div class="mb-3">
+                        <label  for="exampleInputEmail1" class="form-label">Nombre del Producto</label>
+                        <input id="Nombre" type="text" class="form-control"  >
+                      </div>
+
+                      <div class="mb-3" >
+                        <label for="exampleInputEmail1" class="form-label">Codigo</label>
+                        <input id="Codigo" class="form-control"  >
+                       </div>
+
+                    <label  for="inputZip" class="form-label">Nombre del Proveedor</label>
+                    <select  id="Proveedor" class="form-select" aria-placeholder="Digitar" aria-label="Default select example"  > 
+                      <option selected disabled hidden value="" >Seleciona el Proveedor</option>
+                      <option value="1">Radios</option>
+                      <option value="2">RinMax</option>
+                    </select>
+
+                    <label  for="inputZip" class="form-label">Precio de Compra</label>
+                    <div class="input-group">
+                     <input  id="Precio" type="number" class="form-control"   aria-label="Dollar amount (with dot and two decimal places)" >
+                     <span class="input-group-text">$</span>
+                     <span class="input-group-text">0.00</span>
+                    </div>
+
+                    <label  for="inputZip" class="form-label">Categoria</label>
+                    <select id="Categoria" class="form-select" aria-placeholder="Digitar" aria-label="Default select example" > 
+                      <option selected disabled hidden value="" >Seleccione el Accesorio</option>
+                      <option value="1">Radio</option>
+                      <option value="2">Llanta</option>
+                      <option value="3">Rin</option>
+                    </select>
+
+                    <label  for="inputZip" class="form-label">Precio de Venta</label>
+                    <div class="input-group">
+                     <input id="Venta" type="number" class="form-control"   aria-label="Dollar amount (with dot and two decimal places)" >
+                     <span class="input-group-text">$</span>
+                     <span class="input-group-text">0.00</span>
+                    </div>
+
+                    <label id="Cantidad" for="inputZip" class="form-label">Cantidad</label>
+                    <select id="Cantidad" class="form-select" aria-placeholder="Digitar" aria-label="Default select example"  > 
+                      <option selected disabled hidden value="" >0</option>
+                      <option value="1" >1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+
+                    <label  for="inputZip" class="form-label">Tipo de Vehiculo</label>
+                    <select id="Automovil" class="form-select" aria-placeholder="Digitar" aria-label="Default select example"  > 
+                      <option selected disabled hidden value="" >Tipo</option>
+                      <option value="1">Automovil</option>
+                      <option value="2">Camioneta</option>
+                      <option value="3">Micro-Bus</option>
+                    </select>
+
+                    <div class="mb-3" >
+                        <label for="exampleInputEmail1" class="form-label">Descripcion del Producto</label>
+                        <input id="Descripcion" type="text"  class="form-control"  maxlength="500" >
+                       </div>
+                 <br>
+                <div class="botom3">
+                  <input type="submit" class="btn btn-danger" value="Registrar">
+                </div>
+             </form>
+
+ 
+        </article>
+         
+    </div>
+
+    <script src="Producto.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

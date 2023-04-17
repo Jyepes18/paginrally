@@ -1,0 +1,48 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.contenedor{
+    max-width: 100%;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background: red;
+}
+
+header img{
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 1%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+.foto1{
+    position: absolute;
+    width: 5%;
+    margin-left: 90%;
+    margin-top: -7%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+article h2{
+    text-align: center;
+}
+
+
+
+.formulario1{
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 5%;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Promocion.css">
+    <title>Registro de Promociones</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <img src="img/logo/marca.jpg" alt="Ralli Car Audio">
+
+            <div class="dropdown">
+                <img class=" foto1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/admi/administrador.png" >
+                <ul class="dropdown-menu">
+                <a href="das.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
+                </ul>
+              </div>
+        </header>
+
+        <article>
+            <br><br>
+            <h2 class="h2">Registrar Promociones</h2>
+
+                <form class="formulario1" method="post" onsubmit="return validar();" >
+                    <div class="mb-3">
+                        <label  for="exampleInputEmail1" class="form-label">Fecha de Inicio</label>
+                        <input id="Fecha" type="date" class="form-control" >
+                      </div>
+
+                      <div class="mb-3">
+                        <label  for="exampleInputEmail1" class="form-label">Fecha de Venta</label>
+                        <input id="Hora" type="date" class="form-control" >
+                      </div>
+
+
+                    <label id="Producto" for="inputZip" class="form-label">Nombre del Producto</label>
+                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" > 
+                      <option selected disabled hidden value="" >Seleciona el Producto</option>
+                      <option value="1">Radios</option>
+                      <option value="2">Rines</option>
+                      <option value="3">Llanta</option>
+                      <option value="3">Luces</option>
+                    </select>
+
+                    <label id="Cantidad" for="inputZip" class="form-label">Tipos de promociones</label>
+                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" > 
+                      <option selected disabled hidden value="" >Seleciona el Producto</option>
+                      <option value="1">Radios</option>
+                      <option value="2">Rines</option>
+                      <option value="3">Llanta</option>
+                      <option value="3">Luces</option>
+                    </select>
+
+                    <div class="mb-3">
+                      <label  for="exampleInputEmail1" class="form-label">Descripcion</label>
+                      <input id="Descripcion" type="text" class="form-control" >
+                    </div>
+
+
+          
+    
+                 <br>
+                <div class="botom3">
+                  <input type="submit" class="btn btn-danger" name="Registrar" value="Registrar">
+                </div>
+             </form>
+
+ 
+        </article>
+         
+    </div>
+    <script src="Promocion.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
+

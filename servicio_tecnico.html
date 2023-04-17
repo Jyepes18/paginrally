@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Servicio Tecnico</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="estilos3.css" >
+</head>
+<body>
+    <div class="Container">
+        <header >
+            <img src="descarga.png" />
+            
+                <img class="foto" src="usuario.png" />
+                <h4>Administrador</h4>
+        
+                <!--Formulario-->
+
+                <article>
+                    <div class="card" id="tarjeta" style="width:1000px">
+                        <article>
+                    <h1>Crear Servicio Tecnico</h1> 
+                    <form class="formulario1" method="post" onsubmit="return validar();">
+                        <label for="exampleInputEmail1" class="form-label"></label>
+                        <input id="nombre" type="text" class="form-control" placeholder="Nombre" >
+                        
+                        <label for="exampleInputEmail1" class="form-label"></label>
+                        <input id="apellido" type="text" class="form-control" placeholder="Apellido" >
+    
+                        <label id="td" for="inputZip" class="form-label"></label>
+                    <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example" id="tipodoc" > 
+                       <option selected disabled hidden value="" >Tipo de Documento</option>
+                       <option value="1">C.C</option>
+                       <option value="2">C.E</option>
+                    </select>
+                        
+                    <div class="mb-3" id="doc">
+                        <label  for="exampleInputEmail1" class="form-label"></label>
+                        <input id="documento" type="number"  class="form-control" placeholder="Documento"  >
+                       </div>
+    
+                       <div class="input-group flex-nowrap" id="email2">
+                        
+                        <span class="input-group-text" id="addon-wrapping">@</span>
+                        <input id="correo" type="email" class="form-control" placeholder="Correo" aria-label="Username" aria-describedby="addon-wrapping" >
+                       </div>
+    
+                       <div class="mb-3" id="Tel">
+                        <label   for="exampleInputEmail1" class="form-label"></label>
+                        <input id="Telefono" type="number" class="form-control" placeholder="Telefono"  >
+                      </div>
+                    
+    
+    
+                       <div class="botom3" >
+                        <input type="submit" class="btn btn-danger" value="Crear" id="boton"  >
+                      </div>
+    
+                    
+    
+                    </div>
+                </article>
+            </header>
+        </div>
+    </form>
+    <script src="crearserv2.js"></script>
+    <script src="bootstrap.min.js"></script>
+        <script src="bootstrap.bundle.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Cliente.css">
+    <title>Registro de Cliente</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <img src="img/logo/marca.jpg" alt="Ralli Car Audio">
+
+            <div class="dropdown">
+                <img class=" foto1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="img/admi/administrador.png" >
+                <ul class="dropdown-menu">
+                <a href="das.html"> <li><button class=" dropdown-item" type="button">Salir</button></li></a> 
+                </ul>
+              </div>
+        </header>
+
+        <article>
+            <br><br>
+            <h2 class="h2">Registrar Cliente</h2>
+
+
+            <form class="formulario1" method="post" onsubmit="return validar();">
+
+                <label id="tipoid" for="inputZip" class="form-label">Tipo de Documento</label>
+                <select class="form-select" aria-placeholder="Digitar" aria-label="Default select example"  > 
+                   <option selected disabled hidden value="" >Seleciona tu Documento</option>
+                   <option value="1">C.C</option>
+                   <option value="2">C.E</option>
+                </select>
+       
+
+      
+                 <div class="mb-3" >
+                  <label  for="exampleInputEmail1" class="form-label">Documento</label>
+                  <input id="Documento" type="number"  class="form-control" placeholder="EJ:1011085793"  >
+                 </div>
+        
+        
+        
+       
+                <div class="mb-3">
+                  <label   for="exampleInputEmail1" class="form-label">Nombre del cliente</label>
+                  <input id="Nombre" type="text" class="form-control"  >
+                </div>
+        
+        
+        
+                 <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Apellido del cliente</label>
+                  <input  id="Apellido" type="text" class="form-control" >
+                 </div>
+       
+
+    
+                <div class="mb-3">
+                  <label   for="exampleInputEmail1" class="form-label">Telefono</label>
+                  <input type="number"  id="Telefono" class="form-control"   >
+                </div>
+     
+       
+                 <div class="mb-3">
+                  <label   for="exampleInputEmail1" class="form-label">Direccion</label>
+                  <input id="Direccion" type="text" class="form-control">
+                 </div>
+            
+
+     
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input id="Correo" type="email" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" >
+                 </div>
+                 <br>
+                <div class="botom3">
+                  <input type="submit" class="btn btn-danger" value="Registrar"  >
+                </div>
+             </form>
+
+ 
+        </article>
+         
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="Cliente.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
